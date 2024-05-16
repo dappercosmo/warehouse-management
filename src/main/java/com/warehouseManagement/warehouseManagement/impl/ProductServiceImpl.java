@@ -22,6 +22,11 @@ public class ProductServiceImpl implements ProductService {
         Warehouse warehouse = warehouseRepository.findById(warehouseId).orElse(null);
         if(warehouse!=null){
             product.setWarehouse(warehouse);
+            Product productCreated = new Product();
+            productCreated.setProductName(product.getProductName());
+            productCreated.setPrice(product.getPrice());
+            productCreated.setProductDescription(product.getProductDescription());
+            productCreated.setQuantity(productCreated.getQuantity());
             productRepository.save(product);
             return ResponseEntity.ok(product);
         }

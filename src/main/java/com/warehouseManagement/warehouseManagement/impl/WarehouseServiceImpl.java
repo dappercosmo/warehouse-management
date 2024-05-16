@@ -14,6 +14,7 @@ public class WarehouseServiceImpl {
 
     public ResponseEntity<Warehouse> addWarehouse(Warehouse warehouse){
         Warehouse warehouseCreated = new Warehouse();
+        warehouseCreated.setWarehouseName(warehouse.getWarehouseName());
         warehouseRepository.save(warehouseCreated);
         return ResponseEntity.ok(warehouseCreated);
     }
