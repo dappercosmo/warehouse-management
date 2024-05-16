@@ -1,4 +1,4 @@
-package com.warehouseManagement.warehouseManagement.Repository;
+package com.warehouseManagement.warehouseManagement.repository;
 
 import com.warehouseManagement.warehouseManagement.model.Warehouse;
 import org.springframework.data.jpa.repository.JpaRepository;

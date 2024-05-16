@@ -1,7 +1,7 @@
 package com.warehouseManagement.warehouseManagement.impl;
 
-import com.warehouseManagement.warehouseManagement.Repository.ProductRepository;
-import com.warehouseManagement.warehouseManagement.Repository.WarehouseRepository;
+import com.warehouseManagement.warehouseManagement.repository.ProductRepository;
+import com.warehouseManagement.warehouseManagement.repository.WarehouseRepository;
 import com.warehouseManagement.warehouseManagement.model.Product;
 import com.warehouseManagement.warehouseManagement.model.Warehouse;
 import com.warehouseManagement.warehouseManagement.service.ProductService;
